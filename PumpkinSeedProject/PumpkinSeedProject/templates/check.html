@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seed - Check</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SEED</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a class="active" href="/check">Check</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Enter the details:</h2>
+
+        <form action="/predict" method="POST" class="form-box">
+
+            <label>Area:</label>
+            <input type="text" name="Area" required>
+
+            <label>Perimeter:</label>
+            <input type="text" name="Perimeter" required>
+
+            <label>Major Axis Length:</label>
+            <input type="text" name="Major_Axis_Length" required>
+
+            <label>Minor Axis Length:</label>
+            <input type="text" name="Minor_Axis_Length" required>
+
+            <label>Convex Area:</label>
+            <input type="text" name="Convex_Area" required>
+
+            <label>Equiv Diameter:</label>
+            <input type="text" name="Equiv_Diameter" required>
+
+            <label>Eccentricity:</label>
+            <input type="text" name="Eccentricity" required>
+
+            <label>Solidity:</label>
+            <input type="text" name="Solidity" required>
+
+            <label>Extent:</label>
+            <input type="text" name="Extent" required>
+
+            <label>Roundness:</label>
+            <input type="text" name="Roundness" required>
+
+            <label>Aspect Ration:</label>
+            <input type="text" name="Aspect_Ration" required>
+
+            <label>Compactness:</label>
+            <input type="text" name="Compactness" required>
+
+            <button type="submit" class="btn-submit">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

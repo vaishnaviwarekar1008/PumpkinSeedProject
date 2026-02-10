@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seed - Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SEED</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/check">Check</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="result-container">
+        <div class="result-box">
+            <h2>Prediction</h2>
+            <p><b>Result:</b></p>
+            <p>{{ prediction_text }}</p>
+        </div>
+
+        <div class="result-image">
+            <img src="{{ url_for('static', filename='images/seeds.jpg') }}" alt="Seeds Image">
+        </div>
+    </div>
+
+</body>
+</html>
